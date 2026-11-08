@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "firefox-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mozilla/firefox-devtools-mcp@latest"
+      ]
+    },
+    "playwright-firefox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--browser",
+        "firefox"
+      ]
+    },
+    "sqlite-readonly-example": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "/path/to/your/database.db"
+      ],
+      "env": {
+        "DB_READONLY": "true"
+      }
+    },
+    "remote-streamable-http-example": {
+      "url": "https://mcp.example.com/mcp"
+    }
+  }
+}

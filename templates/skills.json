@@ -1,0 +1,25 @@
+{
+  "inherits": [
+    {
+      "path": "/path/to/team-shared/skills.json",
+      "include_only": [
+        "security-audit",
+        "release-checklist"
+      ],
+      "exclude": [
+        "deprecated-.*"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "path": "tools/agent-skills",
+      "exclude": [
+        "experimental-.*"
+      ]
+    },
+    {
+      "path": "~/my-personal-skills"
+    }
+  ]
+}
